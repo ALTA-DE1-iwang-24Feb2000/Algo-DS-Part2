@@ -1,5 +1,13 @@
 def find_min_and_max(arr):
-    return ''
+    if arr == []:
+        return None
+    else:
+        imax = max(arr)
+        imin = min(arr)
+        imaxidx = arr.index(imax)
+        iminidx = arr.index(imin)
+
+    return "min: {} index: {} max: {} index: {}".format(imin, iminidx, imax, imaxidx)
 
 if __name__ == "__main__":
     print(find_min_and_max([5, 7, 4, -2, -1, 8]))
